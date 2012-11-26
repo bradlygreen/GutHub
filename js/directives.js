@@ -31,3 +31,11 @@ directives.directive('butterbar', function($rootScope) {
     }
   };
 });
+
+directives.directive('focus', function() {
+  return {
+    link: function(scope, element, attrs) {
+      element[0].focus();
+    }
+  };
+});
